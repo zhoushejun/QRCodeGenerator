@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7pc-nC-xaa">
+                                <rect key="frame" x="80" y="53" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7pc-nC-xaa" secondAttribute="height" multiplier="1:1" id="DR3-FM-bL2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dJr-RJ-uGK">
+                                <rect key="frame" x="80" y="235" width="160" height="85.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dJr-RJ-uGK" secondAttribute="height" multiplier="240:128" id="HZp-nb-fNn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dJr-RJ-uGK" secondAttribute="trailing" constant="80" id="9zC-US-71Y"/>
+                            <constraint firstItem="dJr-RJ-uGK" firstAttribute="top" secondItem="7pc-nC-xaa" secondAttribute="bottom" constant="22" id="HeF-Lr-5Nm"/>
+                            <constraint firstAttribute="trailing" secondItem="7pc-nC-xaa" secondAttribute="trailing" constant="80" id="JTu-Zt-3k0"/>
+                            <constraint firstItem="7pc-nC-xaa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="Mh1-DX-NNk"/>
+                            <constraint firstItem="7pc-nC-xaa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="bTT-Rb-q8I"/>
+                            <constraint firstItem="dJr-RJ-uGK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="dCL-eM-nt4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="barCodeImageView" destination="dJr-RJ-uGK" id="xDX-CJ-KeN"/>
+                        <outlet property="qrCodeImageView" destination="7pc-nC-xaa" id="NJM-pe-7sQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="206"/>
+        </scene>
+    </scenes>
+</document>
